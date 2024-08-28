@@ -91,7 +91,21 @@ public class QuanLySach {
     }
 
     public static void TimDS() {
-
+//        Sach timkiem = null;
+//        sc.nextLine();
+//        System.out.println("Nhap ma sach can tim: ");
+//        String MSTim = sc.nextLine();
+//        for(Sach S:LS){
+//            if(S.getMaSach().equalsIgnoreCase(MSTim)){
+//                timkiem =S;
+//            }
+//        }
+//        int findIndex = LS.indexOf(new Sach(MSTim));
+//        
+//        if(findIndex != -1)
+//            System.out.println("Da tim thay"+LS);
+//        else
+//            System.out.println("Khong tim thay");
     }
 
     public static void SapXepTang() {
@@ -111,11 +125,12 @@ public class QuanLySach {
     public static void XoaSach() {
         System.out.println("Nhap MS can xoa: ");
         String m = sc.nextLine();
-        if (S.getMaSach() == null ? m == null : S.getMaSach().equals(m)) {
-            LS.remove(S);
-        } else {
-            System.out.println("Khong co MS");
-        }
+        for (Sach S : LS) {
+   
+        if (S.getMaSach() == m) 
+                LS.remove(m);
+        
+    }
     }
 
     public static void SuaSach() {
